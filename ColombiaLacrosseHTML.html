@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Colombia Lacrosse Association</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <section>
+            <div class = "circle"></div>
+            <div class = "circle2"></div>
+            <div class = "circle3"></div>
+            <header>
+                <a href = "#"><img src = "ColombiaLax-removebg-preview.png" class = "logo"></a>
+                <div class = "toggle"></div>
+                <u1 class = "navigation">
+                    <li><a href = "#"> Clubes</a></li>
+                    <li><a href = "#"> Torneos</a></li>
+                    <li><a href = "#"> Selecion Nacional</a></li>
+                    <li><a href = "#"> Contactanos</a></li>
+                </u1>
+            </header>
+            <div class = "content">
+                <div class ="textBox">
+                    <h2> Colombia Lacrosse</h2>
+                    <p> Colombia es un pais lleno de gente que se compromete a ponerle el alma; The creators game is all about heart and heart is what Colombia has!
+                        Colombia is not only looking to compete but it is constantly looking to grow the game; El deporte y la comunidad es parte fundamental de lo que hace Colombia orgullosa de su gente!
+                    </p>
+                    <a href ="#">Conoce Mas!</a>
+                </div>
+            
+                <div class = "imgBox">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="ColLax2.jpeg" /></div>
+                            <div class="swiper-slide"><img src="ColLax1.jpeg" /></div>
+                                <div class="swiper-slide"><img src="ColLax3.jpg" /></div>
+                                    <div class="swiper-slide"><img src="ColLax4.JPG" /></div>
+                                    <div class="swiper-slide"><img src="ColLax5.JPG" /></div>
+                        </div>
+                      </div>
+                </div>
+             
+
+            </div>
+
+            <u1 class = "sci">
+                <li> <a href = "#"><img src = "facebook.png"></a></li>
+                <li> <a href = "#"><img src = "twitter.png"></a></li>
+                <li> <a href = "#"><img src = "instagram.png"></a></li>
+            </u1>
+        </section>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true
+        });
+
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList('active')
+            menuToggle.classList('navigation')
+        }
+      </script>
+    </body>
+</html>
